@@ -169,7 +169,7 @@ function getDateRangesWithNoOverlap(ranges) {
     const prevDate = ranges[index - 1];
     const currentDate = range;
 
-    prevDayOverlap = prevDate
+    const prevDayOverlap = prevDate
       ? checkIfDateAreOverlapping(prevDate.end, currentDate.start)
       : false;
 
