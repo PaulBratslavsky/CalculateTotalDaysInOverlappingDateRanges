@@ -141,7 +141,7 @@ console.log(result, 'result');
 const totalDays = calculateTotalDaysInRange(result)
 console.log(totalDays);
 
-const sumOfAllDays = totalDays.reduce((acc, item) => { return item.totalDays + acc},0)
+const sumOfAllDays = totalDays.reduce((acc, item) => item.totalDays + acc,0)
 console.log(sumOfAllDays);
 
 

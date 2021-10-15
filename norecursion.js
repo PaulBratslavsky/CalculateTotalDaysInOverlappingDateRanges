@@ -149,7 +149,7 @@ function createStack() {
 const stack = createStack();
 
 function checkIfDateAreOverlapping(date1, date2) {
-  return (isOverlapping = date2.getTime() - date1.getTime() < 0 ? true : false);
+  return date2.getTime() - date1.getTime() < 0 ? true : false;
 }
 
 function calculateTotalDaysInRange(dates) {
@@ -210,7 +210,5 @@ console.log(result, 'result');
 const totalDays = calculateTotalDaysInRange(result);
 console.log(totalDays);
 
-const sumOfAllDays = totalDays.reduce((acc, item) => {
-  return item.totalDays + acc;
-}, 0);
+const sumOfAllDays = totalDays.reduce((acc, item) => item.totalDays + acc, 0);
 console.log(sumOfAllDays);
